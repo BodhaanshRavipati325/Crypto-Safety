@@ -5,41 +5,15 @@
   font-style: normal;
 }
 
-body {
-  background-color: black;
-}
 
-.title-wrapper {
-  width: 50%;
-}
-
-.Title {
-  font-family: 'TitleFont';
-  color: white;
+.leaflet-container {
 
   position: absolute;
-  display: flex;
 
-  flex-direction: row;
+  width: 100vw; 
+  height: 60vh;
 
-  padding-top: 20vh;
-  padding-left: 10vh;
+  margin-top: 40vh;
 
-  font-size: 8vw;
-
-  width: 50%;
-
-  text-align: left;
-
-}
-
-.img-container {
-  position: absolute;
-  display: flex;
-
-  align-items: center;
-  justify-content: right;
-
-  margin-top: 12vh;
-  margin-left: 50vw;
+  z-index: 0;
 }

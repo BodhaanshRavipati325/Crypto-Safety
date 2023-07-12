@@ -1,15 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import Boards from './components/Boards'
-import Titles from './components/Titles'
+import Map from './components/Map'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Titles></Titles>
-      <Boards></Boards>
+      <Map></Map>
     </>
   )
 }
