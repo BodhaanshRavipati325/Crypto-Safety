@@ -1,19 +1,55 @@
 @font-face {
-  font-family: 'TitleFont';
-  src: url('/Users/bodhaanshravipati/duke-maps/duke-maps/public/fonts/PPRader-Bold.otf') format('opentype');
+  font-family: "Air";
+  src: url("/Users/bodhaanshravipati/duke-maps/duke-maps/public/fonts/Air/PPAir-BlackMonoItalic.otf")
+    format("opentype");
   font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Air";
+  src: url("/Users/bodhaanshravipati/duke-maps/duke-maps/public/fonts/Air/PPAir-Medium.otf")
+    format("opentype");
+  font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Air";
+  src: url("/Users/bodhaanshravipati/duke-maps/duke-maps/public/fonts/Air/PPAir-MediumItalic.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
 
-.leaflet-container {
+body {
+  background-color: black;
+  color: white;
+}
 
+#update-text {
   position: absolute;
+  font-family: Air;
+  font-style: italic;
 
-  width: 100vw; 
-  height: 60vh;
+  font-size: 1vw;
 
-  margin-top: 40vh;
+  width: 100%;
+  text-align: center;
 
-  z-index: 0;
+  margin-top: 4vw;
+}
+
+#title-text {
+  position: absolute;
+  font-family: Air;
+  font-weight: bold;
+
+  font-size: 1.25vw;
+
+  width: 60%;
+  text-align: center;
+
+  margin-top: 11vw;
+  margin-left: 20vw;
 }

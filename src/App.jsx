@@ -1,13 +1,12 @@
-import { useState } from 'react'
 import './App.css'
-import Map from './components/Map'
+import '@fontsource/public-sans';
+import Titles from './components/Titles';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <Map></Map>
+      <Titles></Titles>
     </>
   )
 }
