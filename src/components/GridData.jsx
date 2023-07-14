@@ -15,7 +15,7 @@ export default function GridData() {
   const [averagePrice, setAveragePrice] = useState([]);
 
   function fetchLiquidationData() {
-    fetch("http://localhost:8000/liquidation-data")
+    fetch("https://crypto-safety.onrender.com/liquidation-data")
       .then((response) => {
         return response.json();
       })
@@ -47,31 +47,42 @@ export default function GridData() {
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid xs={4}>
           <Item>
-            <ItemData props={volume}>ee3e3</ItemData>
+            <h2 id="dataKey">Liquidation Volume</h2>
+            <ItemData props={volume}></ItemData>
           </Item>
         </Grid>
         <Grid xs={4}>
           <Item>
+            <h2 id="dataKey">Long Investment Volume</h2>
+
             <ItemData props={longValue} name="longValue"></ItemData>
           </Item>
         </Grid>
         <Grid xs={4}>
           <Item>
+            <h2 id="dataKey">Short Investment Volume</h2>
+
             <ItemData props={shortValue} name="shortValue"></ItemData>
           </Item>
         </Grid>
         <Grid xs={4}>
           <Item>
+            <h2 id="dataKey">Rate</h2>
+
             <ItemData props={rate}></ItemData>
           </Item>
         </Grid>
         <Grid xs={4}>
           <Item>
+            <h2 id="dataKey">Average Price</h2>
+
             <ItemData props={averagePrice} name="averagePrice"></ItemData>
           </Item>
         </Grid>
         <Grid xs={4}>
           <Item>
+            <h2 id="dataKey">3e3e3</h2>
+
             {/* <ItemData></ItemData> */}
           </Item>
         </Grid>
