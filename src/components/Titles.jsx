@@ -73,7 +73,7 @@ export default function Titles() {
           border: 1,
           borderRadius: 2,
           position: "absolute",
-          marginTop: "16vw",
+          marginTop: "29.5vh",
           marginLeft: "43vw",
         }}
       >
@@ -88,7 +88,7 @@ export default function Titles() {
             border: 1,
             borderRadius: 2,
             position: "absolute",
-            marginTop: "16vw",
+            marginTop: "29.5vh",
             marginLeft: "50vw",
           }}
         >
