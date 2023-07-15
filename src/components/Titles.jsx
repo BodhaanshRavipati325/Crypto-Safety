@@ -1,15 +1,8 @@
-import React from "react";
-import Typography from "@mui/material/Typography";
-import { TypeAnimation } from "react-type-animation";
 import { Button } from "@mui/material";
+import React from "react";
+import { TypeAnimation } from "react-type-animation";
 
-import { borders } from "@mui/system";
 import GridData from "./GridData";
-
-import bitcoinLogo from "/Users/bodhaanshravipati/duke-maps/duke-maps/src/assets/bitcoin-btc-logo.svg";
-import ethereumLogo from "/Users/bodhaanshravipati/duke-maps/duke-maps/src/assets/ethereum-eth-logo.svg";
-import bnbLogo from "/Users/bodhaanshravipati/duke-maps/duke-maps/src/assets/bnb-bnb-logo.svg";
-import usdcLogo from "/Users/bodhaanshravipati/duke-maps/duke-maps/src/assets/usd-coin-usdc-logo.svg";
 
 export default function Titles() {
   var today = new Date();
