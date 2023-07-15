@@ -28,6 +28,8 @@ body {
 }
 
 #update-text {
+
+  color: rgb(178, 178, 178);
   position: absolute;
   font-family: Air;
   font-style: italic;
@@ -70,6 +72,8 @@ body {
   color: gold;
 
   font-family: Air;
+
+  padding-right: 1vw;
 }
 
 #dataKey {
@@ -80,4 +84,50 @@ body {
 
   font-family: Air;
   font-style: italic;
+}
+
+#bitcoin-logo {
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 8vw;
+  height: auto;
+
+  transform: rotate(-40deg);
+
+  margin-left: 2vw
+}
+
+#ethereum-logo {
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 8vw;
+  height: auto;
+
+  transform: rotate(30deg);
+
+  margin-top: 5vw;
+  margin-left: 10vw;
+}
+
+#bnb-logo {
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 8vw;
+  height: auto;
+
+  transform: rotate(30deg);
+
+  margin-top: 5vw;
+  margin-left: 80vw;
+}
+
+#usdc-logo {
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 8vw;
+  height: auto;
+
+  transform: rotate(30deg);
+
+  margin-left: 88vw;
 }

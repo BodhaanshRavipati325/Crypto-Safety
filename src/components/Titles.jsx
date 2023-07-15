@@ -6,6 +6,11 @@ import { Button } from "@mui/material";
 import { borders } from "@mui/system";
 import GridData from "./GridData";
 
+import bitcoinLogo from "/Users/bodhaanshravipati/duke-maps/duke-maps/src/assets/bitcoin-btc-logo.svg";
+import ethereumLogo from "/Users/bodhaanshravipati/duke-maps/duke-maps/src/assets/ethereum-eth-logo.svg";
+import bnbLogo from "/Users/bodhaanshravipati/duke-maps/duke-maps/src/assets/bnb-bnb-logo.svg";
+import usdcLogo from "/Users/bodhaanshravipati/duke-maps/duke-maps/src/assets/usd-coin-usdc-logo.svg";
+
 export default function Titles() {
   var today = new Date();
   var dd = String(today.getDate()).padStart(2, "0");
@@ -25,6 +30,11 @@ export default function Titles() {
 
   return (
     <>
+      {/* <img id="bitcoin-logo" src={bitcoinLogo}></img>
+      <img id="ethereum-logo" src={ethereumLogo}></img>
+      <img id="bnb-logo" src={bnbLogo}></img>
+      <img id="usdc-logo" src={usdcLogo}></img> */}
+
       <h4 id="update-text">UPDATED {today}</h4>
 
       <TypeAnimation
@@ -70,19 +80,22 @@ export default function Titles() {
         Learn More
       </Button>
 
-      <Button
-        sx={{
-          color: "white",
-          fontFamily: "Air",
-          border: 1,
-          borderRadius: 2,
-          position: "absolute",
-          marginTop: "16vw",
-          marginLeft: "50vw",
-        }}
-      >
-        Data
-      </Button>
+      <a href="https://www.coinglass.com/">
+        <Button
+          sx={{
+            color: "white",
+            fontFamily: "Air",
+            border: 1,
+            borderRadius: 2,
+            position: "absolute",
+            marginTop: "16vw",
+            marginLeft: "50vw",
+          }}
+        >
+          Data
+        </Button>
+      </a>
+
       <GridData></GridData>
     </>
   );

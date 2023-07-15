@@ -17,7 +17,7 @@ export default function ItemData(props, name) {
     <>
       <ListItem sx={{ display: "flex", alignItems: "center", height: "7vh" }}>
         <h1 id="key">{data.name}</h1>
-        <h1 id="value">{formatAndRound(data.data)}</h1>
+        <h1 id="value" style={{color: data.color}}>{formatAndRound(data.data)}</h1>
       </ListItem>
       <Divider></Divider>
     </>

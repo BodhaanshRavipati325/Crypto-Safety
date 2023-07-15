@@ -15,7 +15,7 @@ export default function GridData() {
   const [averagePrice, setAveragePrice] = useState([]);
 
   function fetchLiquidationData() {
-    fetch("https://crypto-safety.onrender.com/liquidation-data")
+    fetch("http://localhost:8000/liquidation-data")
       .then((response) => {
         return response.json();
       })

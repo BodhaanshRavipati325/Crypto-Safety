@@ -34,27 +34,47 @@ app.get("/liquidation-data", (req, res) => {
       shortValue = [];
       rate = [];
       averagePrice = [];
+
+      let liquidationDataTotal = 0;
+      let longValueTotal = 0;
+      let shortValueTotal = 0;
+      let rateTotal = 0;
+      let averagePriceTotal = 0;
+      
+      for (let i = 1; i <= 6; i++) {
+        liquidationDataTotal += response.data.data[i].totalVolUsd;
+        longValueTotal += response.data.data[i].longVolUsd;
+        shortValueTotal += response.data.data[i].shortVolUsd;
+        rateTotal += response.data.data[i].rate;
+        averagePriceTotal += response.data.data[i].averagePrice;
+      }
   
       for (let i = 1; i <= 6; i++) {
           liquidationData.push({
             data: response.data.data[i].totalVolUsd,
-            name: response.data.data[i].exchangeName
+            name: response.data.data[i].exchangeName,
+            color: (response.data.data[i].totalVolUsd > (liquidationDataTotal / 6)) ? "green" : "red",
           });
+          
           longValue.push({
             data: response.data.data[i].longVolUsd,
-            name: response.data.data[i].exchangeName
+            name: response.data.data[i].exchangeName,
+            color: (response.data.data[i].longVolUsd > (longValueTotal / 6)) ? "green" : "red",
           });
           shortValue.push({
             data: response.data.data[i].shortVolUsd,
-            name: response.data.data[i].exchangeName
+            name: response.data.data[i].exchangeName,
+            color: (response.data.data[i].shortVolUsd > (shortValueTotal / 6)) ? "green" : "red",
           });
           rate.push({
             data: response.data.data[i].rate,
-            name: response.data.data[i].exchangeName
+            name: response.data.data[i].exchangeName,
+            color: (response.data.data[i].rate > (rateTotal / 6)) ? "green" : "red",
           });
           averagePrice.push({
             data: response.data.data[i].averagePrice,
-            name: response.data.data[i].exchangeName
+            name: response.data.data[i].exchangeName,
+            color: (response.data.data[i].averagePrice > (averagePriceTotal / 6)) ? "green" : "red",
           });
         }
       })
