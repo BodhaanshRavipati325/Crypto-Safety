@@ -27,7 +27,7 @@ async function fetchLiquidationData() {
           "averagePrice": 10
         },
         {
-          "exchangeName": "FTX",
+          "exchangeName": "Coinbase",
           "totalVolUsd": 19,
           "longVolUsd": 44,
           "shortVolUsd": 12,
@@ -35,7 +35,7 @@ async function fetchLiquidationData() {
           "averagePrice": 12.3
         },
         {
-          "exchangeName": "FTX1",
+          "exchangeName": "Kraken",
           "totalVolUsd": 45.1,
           "longVolUsd": 32,
           "shortVolUsd": 11,
@@ -43,7 +43,7 @@ async function fetchLiquidationData() {
           "averagePrice": 66.2
         },
         {
-          "exchangeName": "FTX2",
+          "exchangeName": "Binance.US",
           "totalVolUsd": 47.2,
           "longVolUsd": 11.2,
           "shortVolUsd": 98.1,
@@ -51,7 +51,7 @@ async function fetchLiquidationData() {
           "averagePrice": 1.3
         },
         {
-          "exchangeName": "FTX3",
+          "exchangeName": "Germini",
           "totalVolUsd": 35.7,
           "longVolUsd": 23.8,
           "shortVolUsd": 13.2,
@@ -59,7 +59,7 @@ async function fetchLiquidationData() {
           "averagePrice": 10
         },
         {
-          "exchangeName": "FTX4",
+          "exchangeName": "eToro",
           "totalVolUsd": 98.7,
           "longVolUsd": 221.2,
           "shortVolUsd": 18.9,
@@ -85,27 +85,27 @@ async function fetchLSData() {
               "shortRate": 0.29
             },
             {
-              "exchangeName": "FTX",
+              "exchangeName": "Coinbase",
               "longRate": 0.19,
               "shortRate": 0.18
             },
             {
-              "exchangeName": "FTX1",
+              "exchangeName": "Kraken",
               "longRate": 0.24,
               "shortRate": 0.08
             },
             {
-              "exchangeName": "FTX2",
+              "exchangeName": "Binance.US",
               "longRate": 0.73,
               "shortRate": 0.94
             },
             {
-              "exchangeName": "FTX3",
+              "exchangeName": "Germini",
               "longRate": 0.11,
               "shortRate": 0.13
             },
             {
-              "exchangeName": "FTX4",
+              "exchangeName": "eToro",
               "longRate": 0.17,
               "shortRate": 0.14
             }
