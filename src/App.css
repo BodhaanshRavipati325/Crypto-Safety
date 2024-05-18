@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Air";
-  src: url("/Users/bodhaanshravipati/duke-maps/duke-maps/public/fonts/Air/PPAir-BlackMonoItalic.otf")
+  src: url("/fonts/Air/PPAir-Medium.otf")
     format("opentype");
   font-weight: bold;
   font-style: italic;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Air";
-  src: url("/Users/bodhaanshravipati/duke-maps/duke-maps/public/fonts/Air/PPAir-Medium.otf")
+  src: url("/fonts/Air/PPAir-Medium.otf")
     format("opentype");
   font-weight: normal;
   font-style: normal;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Air";
-  src: url("/Users/bodhaanshravipati/duke-maps/duke-maps/public/fonts/Air/PPAir-MediumItalic.otf")
+  src: url("/fonts/Air/PPAir-MediumItalic.otf")
     format("opentype");
   font-weight: normal;
   font-style: italic;

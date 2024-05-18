@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import ItemData from "./ItemData";
 
-import Item from "/Users/bodhaanshravipati/duke-maps/duke-maps/src/components/Item.jsx";
+import Item from "./Item.jsx";
 
 export default function GridData() {
   const [volume, setVolume] = useState([]);
